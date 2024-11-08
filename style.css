@@ -1,0 +1,25 @@
+@import url("ccs/navegacao.css");
+
+:root {
+    --cor-de-fundo: #080B16;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --azul-escuro: #0D121E;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002F52;
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+}
+
+body {
+    background-color: var(--azul-escuro);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+html {
+    scroll-behavior: smooth;
+  }

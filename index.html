@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="navegacao">
+        <div class="menu_navegacao">
+            <img class="img" src="img/Logo.png" alt="Logo Barbearia">
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#unidade">Unidade</a>
+        </div>
+        <div class="menu_navegacao">
+            <button class="btn_agenda" onclick="openModal()">Agendar horário</button>
+        </div>
+        <div class="overlay" onclick="closeModal()"></div>
+    </header>
+    
+    <section>
+        <img class="banner" src="img/capa.png" alt="Banner">
+        <div class="banner_container">
+            <h1 class="titulo_banner">ESTILO É UM REFLEXO DA SUA ATITUDE E
+                SUA PERSONALIDADE</h1>
+            <h4 class="subtitulo_banner">Hórario de funcionamento: 08:00 às 20:00</h4>
+            <button class="btn_agenda" onclick="openModal()">Agendar horário</button>
+        </div>
+    </section>
+     <section id="sobre">
+        <div class="container_sobre">
+            <div class="container_img_barbeiros">
+                <img class="img1" src="img/corte_barba.jpeg" alt="">
+                <img class="img2" src="img/corte.png" alt="">
+                <img class="img3" src="img/corte_bom.png" alt="">
+            </div>
+            <div class="container_historia">
+                <h1 class="historia_titulo">Sobre</h1>
+                <span class="historia_paragrafo">Oferecemos uma experiência completa de cuidado e bem-estar, voltada para quem busca qualidade e atendimento personalizado. Em um ambiente acolhedor, cada serviço é realizado com atenção aos detalhes para garantir conforto e satisfação. Nosso compromisso é com a excelência, mantendo sempre um preço justo para proporcionar uma experiência que valoriza a sua autoestima e bem-estar.</span>
+                <span class="historia_paragrafo">Trabalhamos com atendimento por ordem de chegada ou com hora marcada.</span>
+                <span class="historia_paragrafo">Horário de funcionamento 08:00 às 20:00</span>
+            </div>
+        </div>
+    </section> 
+    <section id="servicos">
+        <div class="container_servicos">
+            <span class="servico_titulo">Serviços</span>
+            <span class="servico_paragrafo">Cada serviço é pensado para destacar seu estilo e personalidade. No corte de cabelo, buscamos o visual ideal para você, com acabamento impecável. No corte de barba, usamos técnicas de precisão para um resultado elegante e bem cuidado. E o pacote cabelo + barba oferece uma experiência completa, para você sair renovado e confiante.</span>
+            <div class="container_img_servicos">
+                <div class="container_card card-container">
+                    <img class="img_card" src="img/Rectangle 12 (1).png" alt="">
+                    <div class="info_card">
+                        <span class="label_card">Corte de Cabelo</span>
+                        <span class="valor_card">R$ 25,00</span>
+                    </div>
+                </div>
+                <div class="container_card card-container">
+                    <img class="img_card" src="img/hq720.jpg" alt="">
+                    <div class="info_card">
+                        <span class="label_card">Corte de Barba</span>
+                        <span class="valor_card">R$ 20,00</span>
+                    </div>
+                </div>
+                <div class="container_card card-container">
+                    <img class="img_card " src="img/Rectangle 12.png" alt="">
+                    <div class="info_card">
+                        <span class="label_card">Corte de Cabelo e Barba</span>
+                        <span class="valor_card">R$ 40,00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="unidade">
+        <div class="container_unidade">
+            <span class="unidade_titulo">Unidade</span>
+            <div class="container_img_unidade">
+                <div class="card_unidade ">
+                    <img class="img_card_barbearia" src="/img/google.png" alt="">
+                </div>
+                <div class="container_card">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d480.02737599271524!2d-48.26901512749114!3d-15.739549352602792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bb9406d94bc33%3A0xec8d33cc558bb270!2sBarbearia%20Borges!5e0!3m2!1spt-BR!2sbr!4v1730785208641!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+
+        <div class="footer">
+            <div></div>
+            <div><img src="./img/logo-blue 1.png" alt=""></div>
+            <div class="item_footer">
+                <a href="https://wa.me/5561995938105" target="_blank" style="text-decoration: none;">
+                    <img src="/img/WhatsApp_Logo_PNG_Sem_Fundo_Transparente.png" alt="Chat with us on WhatsApp" style="width: 50px; height: 50px;">
+                </a>
+            </div>
+            <div></div>
+            
+        </div>
+
+    </footer>
+
+
+
+
+<!-- Modal de agendamento -->
+<div class="modal" id="modal">
+    <h3 class="titulo_modal">Agendar horário</h3>
+    <label class="label_modal" for="nome">Nome completo</label>
+    <input type="text" class="inputs" id="nome" placeholder="Digite seu nome">
+
+    <label class="label_modal" for="data">Selecione a data</label>
+    <input class="inputs"  type="date" id="data">
+
+    <label class="label_modal" for="unidade">Selecione uma unidade</label>
+    <select id="unidade">
+        <option value="centro">Águas Lindas de Goiás</option>
+    </select>
+
+    <label class="label_modal">Selecione um horário</label>
+    <div class="horarios">        
+        <button onclick="selecionarHorario(this)">08:00</button>
+        <button onclick="selecionarHorario(this)">08:30</button>
+        <button onclick="selecionarHorario(this)">09:00</button>
+        <button onclick="selecionarHorario(this)">09:30</button>
+        <button onclick="selecionarHorario(this)">10:00</button>
+        <button onclick="selecionarHorario(this)">10:30</button>
+        <button onclick="selecionarHorario(this)">11:00</button>
+        <button onclick="selecionarHorario(this)">11:30</button>
+        <button onclick="selecionarHorario(this)">12:00</button>
+        <button onclick="selecionarHorario(this)">12:30</button>
+        <button onclick="selecionarHorario(this)">13:00</button>
+        <button onclick="selecionarHorario(this)">13:30</button>
+        <button onclick="selecionarHorario(this)">14:00</button>
+        <button onclick="selecionarHorario(this)">14:30</button>
+        <button onclick="selecionarHorario(this)">15:00</button>
+        <button onclick="selecionarHorario(this)">15:30</button>
+        <button onclick="selecionarHorario(this)">16:00</button>
+        <button onclick="selecionarHorario(this)">16:30</button>
+        <button onclick="selecionarHorario(this)">17:00</button>
+        <button onclick="selecionarHorario(this)">17:30</button>
+        <button onclick="selecionarHorario(this)">18:00</button>
+        <button onclick="selecionarHorario(this)">18:30</button>
+        <button onclick="selecionarHorario(this)">19:00</button>
+        <button onclick="selecionarHorario(this)">19:30</button>        
+    </div>
+
+    <button onclick="confirmarAgendamento()">Agendar horário</button>
+</div>
+
+<!-- Modal de confirmação -->
+<div class="modal-confirmacao" id="modalConfirmacao">
+    <img src="/img/Logo.png" alt="">
+    <h3 class="titulo_modal">Agendamento realizado com sucesso!</h3>
+    <button class="btn_agenda" onclick="fecharConfirmacao()">Voltar</button>
+</div>
+
+<script src="controller.js"></script>
+</body>
+
+</html>
